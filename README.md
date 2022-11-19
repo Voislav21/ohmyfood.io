@@ -1,1 +1,1 @@
-# https://voislav21.github.io/ohmyfood_project.io
+# https://voislav21.github.io/ohmyfood.io/
