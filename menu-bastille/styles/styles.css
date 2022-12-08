@@ -1,11 +1,5 @@
 /*Menu Bastille Styles*/
-.img{
-    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-height: 350px;
-    width: 100%;
-}
+
 
 .title{
     display: flex;
