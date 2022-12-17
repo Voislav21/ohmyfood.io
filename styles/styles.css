@@ -69,6 +69,7 @@ a{
     border-radius: 35px;
     background-image: linear-gradient(#FF79DA,#9356DC);
     box-shadow: 2px 2px 2px 2px #DCDCDC;
+    color: white;
 }
 
 .explore:hover{
@@ -80,7 +81,116 @@ a{
     color: white;
 }
 
+.steps{
+    padding: 15px 0 35px 0;
+}
+
+.steps h2{
+    margin: 10px 0 5px 0;
+    padding: 20px 0 10px 20px;
+}
+
+.steps-card{
+    position: relative;
+    border: solid 0px;
+    border-radius: 20px;
+    padding: 25px 0 25px 35px;
+    margin: 20px 20px 20px 30px;
+    background-color:#F8F8F8;
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.numbers{
+    position: absolute;
+    left: -10px;
+    border: solid 0;
+    border-radius: 50%;
+    padding: 4px 7px 4px 7px;
+    background-color: #9356DC;
+    color: white;
+    font-size: small;
+}
+
+.card-container{
+    background-color: #F8F8F8;
+    padding: 15px 15px 50px 15px;
+}
+
+.card-container h1{
+    margin: 10px 0 5px 0;
+    padding: 20px 0 10px 20px;
+    font-size: x-large;
+}
+
+.card-section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.card{
+    border: solid 0;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
+}
+
+
 .image-wrapper{
+    max-height: 180px;
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-bottom h3{
+    padding-bottom: 5px;
+}
+
+.heart{
+    font-size: xx-large;
+}
+
+.heart:hover{
+    color: pink;
+    background-color: #9356DC;
+}
+
+.footer-container{
+    background-color: grey;
+    padding: 25px 0 50px 20px;
+}
+
+.footer-container h3{
+    color: white;
+}
+
+.footer-container a, .icon, .icon2{
+    color: white;
+}
+
+.icon{
+    padding-right: 15px;
+}
+
+.icon2{
+    padding-right: 10px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 25px;
 }
