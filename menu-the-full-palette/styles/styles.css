@@ -1,5 +1,67 @@
 /*Menu The Full Palette Styles*/
+
+html{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 15px 30px;
+    gap: 75px;
+}
+
+.arrow{
+    font-size: x-large;
+}
+
+.logo{
+    width: 45%;
+}
+
 .image-wrapper{
     width: 100%;
-    height: auto;
+}
+
+.dishes{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.heart{
+    font-size: x-large;
+}
+
+.card-container{
+    border: solid 1px;
+    border-radius: 20px;
+    padding: 10px 25px 10px 15px;
+    margin: 15px 0 15px 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container h4{
+    margin-bottom: 5px;
 }
