@@ -132,7 +132,6 @@ a{
 }
 
 .card{
-    z-index: 1;
     border: solid 0;
     margin: 10px;
     border-radius: 15px;
@@ -160,13 +159,8 @@ a{
 }
 
 .heart{
-    z-index: 2;
-    pointer-events:none;
     font-size: xx-large;
-}
-
-.heart:hover{
-    fill: #9356DC;
+    pointer-events: none;
 }
 
 .footer-container{
