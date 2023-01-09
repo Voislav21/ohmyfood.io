@@ -76,6 +76,7 @@ header{
     padding: 10px 20px 10px 10px;
     margin: 15px 0 15px 0;
     width: 100%;
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
 }
 
 .cards{
@@ -85,6 +86,23 @@ header{
 
 .card-container h4{
     margin-bottom: 5px;
+}
+
+.tick{
+    display: none;
+    border: solid 1px #99e2d0;
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    margin: -34px -20px -10px -20px;
+    align-items: center;
+    background-color: #99e2d0;
+    color: white;
+    font-size: large;
+}
+
+.card-container:hover .tick{
+    display: flex;
+    cursor: pointer;
 }
 
 .order{

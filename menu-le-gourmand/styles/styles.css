@@ -1,5 +1,150 @@
 /*Menu Le Gourmand Styles*/
+
+html{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 15px 30px;
+}
+
+.arrow{
+    width: 25%;
+    font-size: x-large;
+}
+
+.logo{
+    width: 45%;
+}
+
 .image-wrapper{
     width: 100%;
-    height: auto;
+}
+
+.dishes{
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    background-color: #F0F0F0;
+    margin-top: -75px;
+    padding: 15px 15px 15px 15px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 30px 20px 0 5px;
+    margin-bottom: 15px;
+}
+
+.heart{
+    font-size: x-large;
+}
+
+.food{
+    display: block;
+    padding: 20px 0 0 8px;
+}
+
+.food::after{
+    content: "";
+    display: flex;
+    margin: none;
+    padding-bottom: 5px;
+    width: 10%;
+    border-bottom: 3px solid #99e2d0;
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 20px 10px 10px;
+    margin: 15px 0 15px 0;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container h4{
+    margin-bottom: 5px;
+}
+
+.tick{
+    display: none;
+    border: solid 1px #99e2d0;
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    margin: -34px -20px -10px -20px;
+    align-items: center;
+    background-color: #99e2d0;
+    color: white;
+    font-size: large;
+}
+
+.card-container:hover .tick{
+    display: flex;
+    cursor: pointer;
+}
+
+.order{
+    display: block;
+    margin: 50px auto 50px auto;
+    border: solid 0px;
+    padding: 15px 70px 15px 70px;
+    border-radius: 35px;
+    background-image: linear-gradient(#FF79DA,#9356DC);
+    box-shadow: 2px 2px 2px 2px #DCDCDC;
+    color: white;
+}
+
+.order:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.footer-container{
+    background-color: grey;
+    padding: 25px 0 50px 20px;
+}
+
+.footer-container h3{
+    color: white;
+}
+
+.footer-container a, .icon, .icon2{
+    color: white;
+}
+
+.icon{
+    padding-right: 15px;
+}
+
+.icon2{
+    padding-right: 10px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 25px;
 }
