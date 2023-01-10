@@ -146,5 +146,8 @@ header{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 25px;
+}
+
+.foot-title{
+    padding-bottom: 10px;
 }
