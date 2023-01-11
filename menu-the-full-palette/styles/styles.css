@@ -107,6 +107,11 @@ header{
     display: block;
     transform: rotate(0);
     transition: 1s ease-in-out;
+    /*i am going to write kaka here for a test*/
+}
+
+.tick{
+    display: flex;
 }
 
 .card-container:hover .tick{
