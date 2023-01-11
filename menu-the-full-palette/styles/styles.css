@@ -71,6 +71,8 @@ header{
 }
 
 .card-container{
+    overflow: hidden;
+    position: relative;
     background-color: white;
     border-radius: 15px;
     padding: 10px 20px 10px 10px;
@@ -82,6 +84,7 @@ header{
 .cards{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .card-container h4{
@@ -93,16 +96,27 @@ header{
     border: solid 1px #99e2d0;
     border-radius: 0 15px 15px 0;
     padding: 20px;
-    margin: -34px -20px -10px -20px;
     align-items: center;
     background-color: #99e2d0;
     color: white;
     font-size: large;
+    transition: .7s ease-in-out;
+}
+
+.tick i{
+    display: block;
+    transform: rotate(0);
+    transition: 1s ease-in-out;
 }
 
 .card-container:hover .tick{
-    display: flex;
+    display: block;
     cursor: pointer;
+    margin: -34px -20px -15px -15px;
+}
+
+.card-container:hover .tick i{
+    transform: rotate(360deg);
 }
 
 .order{
