@@ -79,16 +79,27 @@ header{
     margin: 15px 0 15px 0;
     width: 100%;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
+    overflow: hidden;
 }
 
 .cards{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 20px 10px 10px;
+}
+
+.price{
+    display: flex;
 }
 
 .card-container h4{
     margin-bottom: 5px;
+}
+
+.tick-container{
+    transition: 1s;
+    max-width: 0;
 }
 
 .tick{
@@ -97,26 +108,26 @@ header{
     border-radius: 0 15px 15px 0;
     padding: 20px;
     align-items: center;
-    background-color: #99e2d0;
+    background: #99e2d0;
     color: white;
-    font-size: large;
-    transition: .7s ease-in-out;
+    padding: 0 20px 0 20px;
+    height: 100%;
 }
 
 .tick i{
-    display: block;
     transform: rotate(0);
-    transition: 1s ease-in-out;
 }
 
-.card-container:hover .tick{
-    display: block;
+.card-container:hover .tick-container{
     cursor: pointer;
-    margin: -34px -20px -15px -15px;
+    max-width: 100%;
+    transition: 2s ease-in;
+    transition-delay: 0s;
 }
 
 .card-container:hover .tick i{
     transform: rotate(360deg);
+    transition: .7s ease-in;
 }
 
 .order{
