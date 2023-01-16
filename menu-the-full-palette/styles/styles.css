@@ -80,29 +80,16 @@ header{
     overflow: hidden;
 }
 
+.card-container h4{
+    margin-bottom: 5px;
+}
+
 .cards{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     padding: 10px 20px 10px 10px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.card-text{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.card-text p{
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
 }
 
@@ -122,10 +109,6 @@ header{
     display: flex;
     padding-left: 10px;
     padding-left: 10px;
-}
-
-.card-container h4{
-    margin-bottom: 5px;
 }
 
 .tick-container{
@@ -148,7 +131,6 @@ header{
 
 .tick i{
     transform: rotate(0deg);
-    transform: rotate(0deg);
     transition-delay: 0s;
 }
 
@@ -160,7 +142,6 @@ header{
 
 .card-container:hover .tick i{
     transform: rotate(360deg);
-    transition: .6s ease-in;
     transition: .6s ease-in;
 }
 
