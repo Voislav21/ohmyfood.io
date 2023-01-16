@@ -86,10 +86,26 @@ header{
     align-items: flex-end;
     width: 100%;
     padding: 10px 20px 10px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-text p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .price{
     display: flex;
+    padding-left: 10px;
 }
 
 .card-container h4{
@@ -113,7 +129,7 @@ header{
 }
 
 .tick i{
-    transform: rotate(0);
+    transform: rotate(0deg);
 }
 
 .card-container:hover .tick-container{
@@ -125,7 +141,7 @@ header{
 
 .card-container:hover .tick i{
     transform: rotate(360deg);
-    transition: .7s ease-in;
+    transition: .6s ease-in;
 }
 
 .order{
