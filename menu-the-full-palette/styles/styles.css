@@ -101,10 +101,26 @@ header{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card-text p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .price{
     display: flex;
+    padding-left: 10px;
     padding-left: 10px;
 }
 
@@ -132,6 +148,7 @@ header{
 
 .tick i{
     transform: rotate(0deg);
+    transform: rotate(0deg);
     transition-delay: 0s;
 }
 
@@ -143,6 +160,7 @@ header{
 
 .card-container:hover .tick i{
     transform: rotate(360deg);
+    transition: .6s ease-in;
     transition: .6s ease-in;
 }
 
