@@ -71,11 +71,9 @@ header{
 }
 
 .card-container{
-    position: relative;
-    overflow: hidden;
+    display: flex;
     background-color: white;
     border-radius: 15px;
-    padding: 10px 20px 10px 10px;
     margin: 15px 0 15px 0;
     width: 100%;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
@@ -85,6 +83,7 @@ header{
 .cards{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
     padding: 10px 20px 10px 10px;
 }
@@ -103,10 +102,9 @@ header{
 }
 
 .tick{
-    display: none;
-    border: solid 1px #99e2d0;
     border-radius: 0 15px 15px 0;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background: #99e2d0;
     color: white;
