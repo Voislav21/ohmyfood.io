@@ -136,6 +136,7 @@ a{
     margin: 10px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px #DCDCDC;
+    position: relative;
 }
 
 
@@ -149,18 +150,46 @@ a{
 
 .card-bottom{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+    position: relative;
+}
+
+.card-bottom--link{
+    width: 100%;
 }
 
 .card-bottom h3{
     padding-bottom: 5px;
 }
 
+.card-text{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: fit-content;
+}
+
 .heart{
+    position: absolute;
+    right: 20px;
+    top: 25px;
     font-size: xx-large;
-    pointer-events: none;
+    width: fit-content;
+}
+
+.heart .solid{
+    display: none;
+}
+
+.heart:hover .solid{
+    display: flex;
+    cursor: pointer;
+    background: radial-gradient(#FF79DA,#9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heart:hover .empty{
+    display: none;
 }
 
 .footer-container{
