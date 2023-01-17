@@ -99,7 +99,7 @@ header{
     white-space: nowrap;
 }
 
-.card-text p{
+.card-text p, h4{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -107,7 +107,6 @@ header{
 
 .price{
     display: flex;
-    padding-left: 10px;
     padding-left: 10px;
 }
 
