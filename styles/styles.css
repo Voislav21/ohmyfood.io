@@ -142,6 +142,19 @@ a{
     position: relative;
 }
 
+.new{
+    position: absolute;
+    border: solid 0;
+    border-radius: 2px;
+    background-color: #99e2d0;
+    font-weight: 500;
+    color: #48bf91;
+    padding: 5px 25px 5px 25px;
+    top: 15px;
+    right: 15px;
+
+}
+
 
 .image-wrapper{
     max-height: 180px;
@@ -176,8 +189,8 @@ a{
     border: none;
     position: absolute;
     right: 20px;
-    top: 25px;
-    font-size: xx-large;
+    top: 15px;
+    font-size: x-large;
     width: fit-content;
 }
 
