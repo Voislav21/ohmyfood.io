@@ -100,7 +100,10 @@ a{
     box-shadow: 2px 2px 2px 2px #DCDCDC;
     display: flex;
     align-items: center;
-    gap: 20px;
+}
+
+.steps-card span i{
+    padding-right: 20px;
 }
 
 .numbers{
@@ -169,6 +172,8 @@ a{
 }
 
 .heart{
+    background-color: #F8F8F8;
+    border: none;
     position: absolute;
     right: 20px;
     top: 25px;
@@ -178,22 +183,30 @@ a{
 
 .heart .solid{
     display: none;
+    background: radial-gradient(#FF79DA,#9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .heart:hover .solid{
     display: flex;
     cursor: pointer;
-    background: radial-gradient(#FF79DA,#9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+
+.heart:focus .solid{
+    display: flex;
 }
 
 .heart:hover .empty{
     display: none;
 }
 
+.heart:focus .empty{
+    display: none;
+}
+
 .footer-container{
-    background-color: grey;
+    background-color: #343434;
     padding: 25px 0 50px 20px;
 }
 
