@@ -66,7 +66,6 @@ header{
 .food::after{
     content: "";
     display: flex;
-    margin: none;
     padding-bottom: 5px;
     width: 10%;
     border-bottom: 3px solid #99e2d0;

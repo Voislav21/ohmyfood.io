@@ -287,5 +287,43 @@ a{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 25px;
+}
+
+.foot-title{
+    padding-bottom: 10px;
+}
+
+@media (min-width: 780px) {
+    .steps {
+        text-align: center;
+    }
+    .steps-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .steps-card {
+        padding: 25px 35px 25px 35px;
+        min-width: 25%;
+        
+    }
+
+    .card-section {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        min-width: 45%;
+    }
+}
+
+@media (min-width: 1050px) {
+    .card-section {
+        justify-content: flex-start;
+    }
+
+    .card {
+        min-width: 30%;
+    }
 }
