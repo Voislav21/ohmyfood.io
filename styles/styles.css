@@ -255,28 +255,19 @@ a{
 }
 
 .heart .solid{
-    display: none;
+    color: transparent;
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+}
+
+.heart:hover .solid {
     background: linear-gradient(#FF79DA,#9356DC);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.3);
 }
 
-.heart:hover .solid{
-    display: flex;
-    cursor: pointer;
-}
-
-.heart:focus .solid{
-    display: flex;
-}
-
-.heart:hover .empty{
-    display: none;
-}
-
-.heart:focus .empty{
+.heart:hover .empty {
     display: none;
 }
 
@@ -360,6 +351,9 @@ a{
     .card-section {
         display: grid;
         grid-template-columns: 280px 280px 280px 280px;
+    }
+    .card img {
+        max-height: 150px;
     }
 }
 
