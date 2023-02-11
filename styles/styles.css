@@ -228,13 +228,13 @@ a{
 
 .card-bottom{
     display: grid;
+    grid-template-columns: 88%;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
 }
 
 .card-bottom--link{
-    width: 100%;
+    display: flex;
+    width: 110%;
 }
 
 .card-bottom h3{
@@ -365,6 +365,14 @@ a{
     .card {
         min-width: 45%;
     }
+
+    .card-bottom {
+        grid-template-columns: 85%;
+    }
+
+    .card-bottom--link {
+        width: 117%;
+    }
 }
 
 @media (min-width: 1050px) {
@@ -376,6 +384,14 @@ a{
 
     .card {
         min-width: 30%;
+    }
+
+    .card-bottom {
+        padding-right: 15px;
+    }
+
+    .card-bottom--link {
+        width: 123%;
     }
 
     .heart {
