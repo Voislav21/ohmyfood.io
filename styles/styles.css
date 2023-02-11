@@ -371,6 +371,20 @@ a{
 }
 
 @media (min-width: 1450px) {
+
+    .top-media {
+        display: grid;
+        grid-template-columns: 600px 400px;
+        justify-content: center;
+        justify-items: center;
+        align-items: baseline;
+    }
+
+    .steps-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
     .card-section {
         display: grid;
         grid-template-columns: 350px 350px 350px 350px;
