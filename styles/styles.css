@@ -16,7 +16,7 @@ a{
     text-decoration: none;
 }
 
-/*.loading {
+.loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ a{
     100% {
       transform: translateY(-50px);
     }
-  }*/
+  }
 
 .header{
     display: flex;
@@ -70,8 +70,10 @@ a{
     position: relative;
 }
 
-.header img{
-    max-width: 45%;
+.logo{
+    width: 45%;
+    display: block;
+    margin: auto;
 }
 
 .location{

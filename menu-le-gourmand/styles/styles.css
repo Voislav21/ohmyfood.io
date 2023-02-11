@@ -23,16 +23,19 @@ header{
 }
 
 .arrow{
-    width: 25%;
+    width: 35%;
     font-size: x-large;
 }
 
 .logo{
     width: 45%;
+    margin-left: 20px;
 }
 
 .image-wrapper{
     width: 100%;
+    object-fit: cover;
+    max-height: 480px;
 }
 
 .dishes{
@@ -44,6 +47,8 @@ header{
 }
 
 .title{
+    font-family: 'Shrikhand';
+    font-size: small;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,12 +66,12 @@ header{
     padding: 20px 0 0 8px;
 }
 
-.food::after{
-    content: "";
-    display: flex;
-    padding-bottom: 5px;
-    width: 10%;
-    border-bottom: 3px solid #99e2d0;
+.underline {
+    display: block;
+    border-bottom: solid 3px #99e2d0;
+    max-width: 45px;
+    margin-left: 8px;
+    padding-top: 5px;
 }
 
 .card-container{
@@ -188,10 +193,15 @@ header{
 
 .footer-container h3{
     color: white;
+    font-family: 'Shrikhand';
 }
 
 .footer-container a, .icon, .icon2{
     color: white;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
 }
 
 .icon{
@@ -210,4 +220,40 @@ header{
 
 .foot-title{
     padding-bottom: 10px;
+}
+
+@media (min-width: 676px) {
+    
+    .image-wrapper {
+        min-height: 480px;
+    }
+
+    .title {
+        justify-content: center;
+        gap: 15px;
+        font-size: x-large;
+    }
+
+    .heart {
+        font-size: xx-large;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .menu-container{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .logo {
+        margin-left: 65px;
+    }
 }
